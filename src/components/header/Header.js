@@ -8,15 +8,10 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import "./Header.css";
 import { Redirect } from "react-router-dom";
 
-const City = React.lazy(() => import("../City/City"));
-const Current = React.lazy(() => import("../current/Current"));
-const ForecastPreview = React.lazy(() => import("../ForecastPreview/ForecastPreview"));
-const Footer = React.lazy(() => import("../footor/Footer"));
-
-
-
-
-
+import City from "../City/City";
+import Current from "../current/Current";
+import ForecastPreview from "../ForecastPreview/ForecastPreview";
+import Footer from "../footor/Footer";
 
 const Header = (props) => {
   const [city, setCity] = useState(props.defaultCity);
@@ -29,13 +24,9 @@ const Header = (props) => {
   const [cSelected, setCSelected] = useState(props.unitC);
   const [ready, setReady] = useState(false);
   const history = useHistory();
-  var currentColor = localStorage.getItem("displayTheme");
-
-  currentColor = typeof currentColor == "number" ? false : currentColor;
-
+  var currentColor = JSON.parse(localStorage.getItem("displayTheme"));
   const [isDarkMood, setIsDarkMoog] = useState(currentColor);
-
-  localStorage.setItem("displayTheme", isDarkMood);
+  localStorage.setItem("displayTheme", JSON.stringify(isDarkMood));
 
   function showTime(response) {
     setDay(response.data.day_of_week);
@@ -149,14 +140,16 @@ const Header = (props) => {
   if (ready) {
     return (
       // all app
-      <div >
-        <div className={`${isDarkMood?  "darkMoodApp"  :"lightMoodApp"}`}>
+      <div>
+        <div className={`${isDarkMood ? "darkMoodApp" : "lightMoodApp"}`}>
           <div className="Header">
             <div className="page-name">
-            <span  style={{cursor:"pointer" }} onClick={()=>setIsDarkMoog(!isDarkMood)}> 
-       
+              <span
+                style={{ cursor: "pointer" }}
+                onClick={() => setIsDarkMoog(!isDarkMood)}
+              >
                 {isDarkMood ? <NightlightIcon /> : <LightModeIcon />}
-            </span>
+              </span>
             </div>
             <div className="search-form">
               <form onSubmit={handleSubmit}>
@@ -175,7 +168,7 @@ const Header = (props) => {
                 />
               </form>
             </div>
-            <div className="conversion" >
+            <div className="conversion">
               <a href="http://">
                 <span
                   className="conversion-c"
@@ -325,8 +318,8 @@ const Header = (props) => {
             />
           </div>
         </div>
-         <Footer  theme={isDarkMood}/>
-      </div > 
+        <Footer theme={isDarkMood} />
+      </div>
     );
   } else {
     return (
