@@ -5,13 +5,18 @@ import { BallTriangle } from "react-loader-spinner";
 import axios from "axios";
 import NightlightIcon from "@mui/icons-material/Nightlight";
 import LightModeIcon from "@mui/icons-material/LightMode";
-import City from "../City/City";
-import Current from "../current/Current";
-import ForecastPreview from "../ForecastPreview/ForecastPreview";
-
 import "./Header.css";
 import { Redirect } from "react-router-dom";
-import Footer from "../footor/Footer";
+
+const City = React.lazy(() => import("../City/City"));
+const Current = React.lazy(() => import("../current/Current"));
+const ForecastPreview = React.lazy(() => import("../ForecastPreview/ForecastPreview"));
+const Footer = React.lazy(() => import("../footor/Footer"));
+
+
+
+
+
 
 const Header = (props) => {
   const [city, setCity] = useState(props.defaultCity);
