@@ -9,7 +9,7 @@ const Footer = (props) => {
     
     <footer className= {`${props.theme? "darkFooter":"lightFooter"}`}>
       <a
-        href="https://github.com/AhmedAbdelerhman"
+        href="https://github.com/AhmedAbdelerhman/React-weather-app"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -17,7 +17,7 @@ const Footer = (props) => {
       </a>
 
       <a
-        href="https://github.com/JuliaKnaeble/circle-cast-react"
+        href="https://www.linkedin.com/in/ahmed-abdalrahman-1075b3173/"
         target="_blank"
         rel="noopener noreferrer"
       >
