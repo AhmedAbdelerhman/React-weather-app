@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+}
+.lightMoodApp {
+  min-height: 90vh;
+  background-color: #fcfeff;
+  font-family: "Montserrat", sans-serif;
+  padding-top:1vh;
+  color: #465866;
+
+}
+
+
+
+.lightMoodApp a {
+
+  color: #465866;
+
+}
+
+
+
+.darkMoodApp {
+  min-height: 90vh;
+
+  font-family: "Montserrat", sans-serif;
+  padding-top:1vh;
+
+  background-color: #1A202C;
+  color: #ECECEC;
+}
+
+.darkMoodApp a {
+
+  color: #ECECEC;
+
+}

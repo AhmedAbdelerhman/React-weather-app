@@ -1,0 +1,175 @@
+.Header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.page-name {
+  font-weight: 500;
+  font-size: 2.25rem;
+
+}
+
+a {
+  font-weight: 500;
+  font-size: 2.25rem;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.text-input {
+  max-width: 700px;
+  width: 500px;
+  height: 50px;
+  border-radius: 50px;
+  padding-left: 25px;
+  border: 0.8px solid #aec2d2;
+  background-color: #fcfeff;
+  text-align: left;
+  outline: none;
+}
+
+::placeholder {
+  color: #94aec2;
+  font-size: 1.25rem;
+  letter-spacing: -0.1px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.text-input,
+textarea {
+  font-size: 1.25rem;
+  letter-spacing: -0.1px;
+  text-align: left;
+  font-weight: 500;
+}
+
+button {
+  position: relative;
+  left: 92%;
+  background-color: transparent;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+
+.search-icon {
+  font-size: 1rem;
+}
+
+.conversion-f,
+.conversion-c {
+  font-weight: 800;
+  font-size: 1.75rem;
+  height: 40px;
+  padding: 10px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.conversion-f {
+  right: 25px;
+}
+
+.conversion-c {
+  right: 75px;
+}
+
+.loader {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .page-name {
+    font-size: 1.5rem;
+  }
+  a {
+    font-size: 1.5rem;
+  }
+
+  .text-input {
+    width: 300px;
+    height: 50px;
+    padding-left: 25px;
+  }
+  button {
+    left: 88%;
+  }
+  .conversion-f,
+  .conversion-c {
+    font-size: 1rem;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+  }
+  .conversion-c {
+    right: 70px;
+  }
+}
+
+@media (max-width: 675px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+  }
+
+.conversion a
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+  .search-form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .page-name-welcome-xs {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .conversion-f,
+  .conversion-c {
+    font-size: 1rem;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+
+    line-height: 30px;
+  }
+  .conversion-c {
+    right: 55px;
+  }
+  .text-input {
+    margin: 0 auto;
+    display: block;
+    height: 45px;
+    width: 190px;
+  }
+  button {
+    top: 41px;
+    width: 40px;
+    left: 81%;
+  }
+  ::placeholder {
+    font-size: 1rem;
+  }
+}

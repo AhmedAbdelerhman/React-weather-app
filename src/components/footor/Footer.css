@@ -1,0 +1,134 @@
+.darkFooter {   
+  font-weight: 400;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9vh;
+  background-color: #1A202C;
+}
+
+.darkFooter a {
+  font-weight: 600;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 1%;
+  background-color: #2C313D;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.darkFooter a:hover {
+  color: #F0F0F1;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 1%;
+  background-color: #3F444E;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.darkFooter a  svg{
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 1%;
+  padding: 3px;
+  display: block;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+.lightFooter {
+  font-weight: 400;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9vh;
+  background-color: #FCFEFF;
+}
+
+.lightFooter a {
+  font-weight: 600;
+  color: #1A202C;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 1%;
+  background-color: #E2E8F0;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lightFooter a:hover {
+  color: #1A202C;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 0 1%;
+  background-color: #E2E8F0;
+  padding: 8px;
+  display: block;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.lightFooter a  svg{
+  font-weight: 600;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 0 1%;
+  padding: 3px;
+  display: block;
+  text-align: center;
+  align-self: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Error Text */
+.error {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  letter-spacing: -0.11px;
+}
+
+@media (max-width: 1000px) {
+  .error {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 675px) {
+  .error {
+    font-size: 1.25rem;
+  }
+}
